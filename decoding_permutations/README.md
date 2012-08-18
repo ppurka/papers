@@ -10,8 +10,10 @@ The subdirectory "sage" contains the implementation via Sage.
 The subdirectory "matlab" contains the implementation on MATLAB or Octave.
 
 Installation
-============
-#. Sage - copy the ``sage`` directory somewhere::
+------------
+
+#. Sage
+    copy the ``sage`` directory somewhere::
 
     $ cd sage
     $ sage -python setup.py build_ext --inplace
@@ -20,16 +22,18 @@ Installation
    http://trac.sagemath.org/10512 and http://trac.sagemath.org/13340
 
 
-#. MATLAB - simply copy the ``matlab`` directory somewhere
+#. MATLAB
+    simply copy the ``matlab`` directory somewhere
 
 
 Execution
-=========
+---------
 
 #. Sage::
 
     $ sage run_simulation.sage
 
-#. MATLAB or Octave - from within the matlab directory, run the file
-   ``simulation``. Make sure to set ``OCTAVE=1`` in ``simulation.m`` if run
-   via Octave.
+#. MATLAB or Octave
+    from within the matlab directory, run the file
+    ``simulation``. Make sure to set ``OCTAVE=1`` in ``simulation.m`` if run
+    via Octave.
