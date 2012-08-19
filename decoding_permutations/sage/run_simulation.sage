@@ -9,7 +9,7 @@ from simulation     import *
 
 
 # Run this block just once
-num_tx          = [10**3]*9 + [10**4]*9 + [10**4]*9
+num_tx          = [10**4]*9 + [10**5]*9 + [10**5]*9
 prob_list       = ( srange(9*10^-1, 10^-2, -10^-1)
                   + srange(9*10^-2, 10^-3, -10^-2)
                   + srange(9*10^-3, 10^-4, -10^-3)
