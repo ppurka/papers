@@ -10,3 +10,10 @@ Source code of simulations or computations in published articles.
    "Importance of symbol equity in coded modulation for power line
    communications", preprint, 8 pages.
 
+3. `matrix_code` - These are files that can generate the figures in both
+    1. Y. M. Chee, H. M. Kiah, P. Purkayastha, and C. Wang, "Importance of
+       symbol equity in coded modulation for power line communications",
+       preprint, and
+    2. Y. M. Chee, H. M. Kiah, and P. Purkayastha, "Matrix codes and
+       multitone frequency shift keying in power line communications", to
+       appear in IEEE ISIT 2013, 5 pages.
