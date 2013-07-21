@@ -54,12 +54,12 @@ specific codes you want to simulate.
 
 1. `powerline_code.pyx` - has the following three classes for concatenated
    codes (see the examples in `codes_linear.py`):
-    a) PowerlineReedSolomonCode - this class is for the Reed Solomon
+    1. *PowerlineReedSolomonCode* - this class is for the Reed Solomon
        code. It takes in the constant weight code (as a NonlinearCode
        class), the alphabet size q of the Reed Solomon code, and the
        dimension of the Reed Solomon code. Default length of the Reed
        Solomon code is q-1.
-    b) PowerlineReedSolomonSubcode - this class is for the Reed Solomon
+    2. *PowerlineReedSolomonSubcode* - this class is for the Reed Solomon
        subcode which contains all words except the all-one and its
        scalings. It takes in the constant weight code (as a NonlinearCode
        class), the alphabet size q of the Reed Solomon code, and the
@@ -67,14 +67,14 @@ specific codes you want to simulate.
        Solomon code is q-1.
        The parameters it takes are the same as the PowerlineReedSolomonCode
        class.
-    c) PowerlineReedSolomonCosetCode - this class is for the Reed Solomon
+    3. *PowerlineReedSolomonCosetCode* - this class is for the Reed Solomon
        coset. The coset leader is generated from the evaluations of the
        generator polynomial of the RS code of one dimension higher.
        The parameters it takes are the same as the PowerlineReedSolomonCode
        class.
 
-    The class PowerlineCode can be used for nonlinear codes (see codes.py
-    for examples), while the class PowerlineLinearCode can be used for
+    The class *PowerlineCode* can be used for nonlinear codes (see codes.py
+    for examples), while the class *PowerlineLinearCode* can be used for
     large linear codes where it is not desired to generate all the
     codewords of the code.
 
