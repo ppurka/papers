@@ -3,7 +3,8 @@
 These are the files used to generate the data for the figures in
 
 1. Y. M. Chee, H. M. Kiah, and P. Purkayastha, "Rewritable Coset Coding for
-   Flash Memories", preprint, 5 pages, to appear in IEEE ISIT 2014.
+   Flash Memories", IEEE International Symposium on Information Theory (ISIT)
+   2014, Honolulu, Hawaii, USA, pp. 2082 - 2086.
 
 
 The file `coset_coding.sage` contains the implementation in

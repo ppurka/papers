@@ -13,7 +13,15 @@ Source code of simulations or computations in published articles.
 3. `matrix_code` - These are files that can generate the figures in both
     1. Y. M. Chee, H. M. Kiah, P. Purkayastha, and C. Wang, "Importance of
        symbol equity in coded modulation for power line communications",
-       preprint, and
+       IEEE Transactions on Communications, vol. 61, no. 10,
+       pp. 4381 - 4390, October 2013., and
     2. Y. M. Chee, H. M. Kiah, and P. Purkayastha, "Matrix codes and
-       multitone frequency shift keying in power line communications", to
-       appear in IEEE ISIT 2013, 5 pages.
+       multitone frequency shift keying in power line communications", IEEE
+       International Symposium on Information Theory (ISIT) 2013, Istanbul,
+       Turkey, pp. 2870 - 2874.
+
+4. `flash_memory` - These are the files used to generate the data for the
+   figures in Y. M. Chee, H. M. Kiah, and P. Purkayastha, "Rewritable Coset
+   Coding for Flash Memories", IEEE International Symposium on Information
+   Theory (ISIT) 2014, Honolulu, Hawaii, USA, pp. 2082 - 2086.
+

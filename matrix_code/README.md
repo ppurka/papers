@@ -4,11 +4,13 @@ These are the files used to generate the data for the figures in
 
 1. Y. M. Chee, H. M. Kiah, P. Purkayastha, and C. Wang, "Importance of
    symbol equity in coded modulation for power line communications",
-   preprint, 8 pages.
+   IEEE Transactions on Communications, vol. 61, no. 10, pp. 4381 - 4390,
+   October 2013.
 
 2. Y. M. Chee, H. M. Kiah, and P. Purkayastha, "Matrix codes and multitone
-   frequency shift keying in power line communications", to appear in IEEE
-   ISIT 2013, 5 pages.
+   frequency shift keying in power line communications", IEEE International
+   Symposium on Information Theory (ISIT) 2013, Istanbul, Turkey,
+   pp. 2870 - 2874.
 
 The subdirectory `sage` contains the implementation in Sage.
 
