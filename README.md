@@ -25,3 +25,4 @@ Source code of simulations or computations in published articles.
    Coding for Flash Memories", IEEE International Symposium on Information
    Theory (ISIT) 2014, Honolulu, Hawaii, USA, pp. 2082 - 2086.
 
+5. `beamer_template` - This directory contains my beamer style file.
