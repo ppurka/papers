@@ -1,0 +1,75 @@
+\ProvidesPackageRCS $Header: beamerthemeself.sty,v 1.0 2015/02/28 09:00:00 ppurka Exp $
+
+% Copyright 2003 by Till Tantau <tantau@users.sourceforge.net>
+%
+% This program can be redistributed and/or modified under the terms
+% of the GNU Public License, version 2.
+%
+% Heavily modified version of beamerthemeSingapore by Punarbasu Purkayastha.
+% Copyright 2015 by Punarbasu Purkayastha <ppurka at gmail _dot_ com>
+%
+% This program can be redistributed and/or modified under the terms
+% of the GNU Public License, version 2.
+
+\DeclareOptionBeamer{compress}{\beamer@compresstrue}
+\ProcessOptionsBeamer
+  
+
+\mode<presentation>
+
+\setbeamercolor{section in head/foot}{use=structure,bg=structure.fg!25!bg}
+\useinnertheme{rounded}
+\setbeamertemplate{frametitle}[default][center]
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamercolor{block title}{use=structure,fg=structure.fg,bg=structure.fg!8!bg}
+\setbeamercolor{block title alerted}{use=alerted text,fg=alerted text.fg,bg=alerted text.fg!20!bg}
+\setbeamercolor{block title example}{use=example text,fg=example text.fg,bg=example text.fg!05!bg}
+
+\setbeamercolor{block body}{parent=normal text,use=block title,bg=structure.fg!8!bg}
+\setbeamercolor{block body alerted}{parent=normal text,use=block title alerted,bg=block title alerted.bg!50!bg}
+\setbeamercolor{block body example}{parent=normal text,use=block title example,bg=example text.fg!05!bg}
+
+%%
+%% The following inserts a progressbar at the bottom
+%% Ideas obtained from http://tex.stackexchange.com/questions/59742/progress-bar-for-latex-beamer
+%%
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\def\progressbar{}
+\newdimen\pbarht
+\newdimen\pbartmp
+\pbarht = 3pt
+
+% the progress bar
+\def\progressbar{%
+    \pbartmp    = \linewidth
+    \multiply   \pbartmp by \insertframenumber
+    \divide     \pbartmp by \inserttotalframenumber
+    \begin{tikzpicture}
+        \draw[white, line width=\pbarht]
+            (0pt, 0pt) rectangle ++ (\linewidth, \pbarht);
+        \draw[blue!5, line width=\pbarht]
+            (0pt, 0pt) -- ++ (\pbartmp - \pbarht,0pt);
+        \node[circle, radius=3pt, fill=blue!5, text=black!40] at  %
+            (\the\dimexpr\pbartmp\relax, -0.04\pbarht) %
+            {\insertframenumber};
+        \node[circle, draw, color=blue!10, text=black!20] at     %
+            (\the\linewidth, -0.04\pbarht)  %
+            {\inserttotalframenumber};
+    \end{tikzpicture}%
+}
+\addtobeamertemplate{footline}{}
+{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=3ex,center,dp=0.5ex]{white}%
+    \progressbar%
+  \end{beamercolorbox}%
+}
+%%
+%% End of progressbar
+%%
+
+\beamertemplatedotitem
+\mode
+<all>
