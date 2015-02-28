@@ -2,8 +2,9 @@
 
 These are the files used to generate the data for the figures in
 Y. M. Chee, H. M. Kiah, P. Purkayastha, and C. Wang, "Importance of symbol
-equity in coded modulation for power line communications", preprint,
-8 pages.
+equity in coded modulation for power line communications", IEEE
+Transactions on Communications, vol. 61, no. 10, pp. 4381 - 4390, October
+2013. This is superseeded by the files in `matrix_code`.
 
 The subdirectory `sage` contains the implementation in Sage.
 
